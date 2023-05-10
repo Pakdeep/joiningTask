@@ -1,0 +1,27 @@
+.movieItem {
+    height: 400px;
+    width: 23%;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.poster {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    height: 75%;
+}
+
+.poster img {
+    height: 280px;
+}
+
+.about {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+}
