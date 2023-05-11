@@ -7,9 +7,9 @@ const MovieItem = (props) => {
         <img src={props.poster} alt="this is poster part" />
       </div>
       <div className="about">
-        <h3>{props.title}</h3>
-        <h3>{props.year}</h3>
-        <h3>{props.production}</h3>
+        <h3>Name: {props.title}</h3>
+        <h3>Released Year: {props.year}</h3>
+        <h3>Rating: {props.production}</h3>
       </div>
     </div>
   );

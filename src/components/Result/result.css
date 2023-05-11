@@ -6,3 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.result h1{
+    font-size: 3rem;
+}

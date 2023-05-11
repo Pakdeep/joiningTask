@@ -9,7 +9,7 @@ const Movies = () => {
             {
                 moviesList.map((movie, index) => {
                     return (
-                        <MovieItem key={index} title={movie.Title} year={movie.Year} poster={movie.Poster} production={movie.Production} />
+                        <MovieItem key={index} title={movie.Title} year={movie.Year} poster={movie.Poster} production={movie.imdbRating} />
                     )
                 })
             }

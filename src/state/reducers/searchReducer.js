@@ -1,20 +1,12 @@
 import moviesList from "../../moviesList"
-const initState = moviesList;
-const searchReducer = (searchMovie = initState, action) => {
-    let x;
-    let movies = [];
-    
-    console.log(searchMovie)
-    if (action.type === "SEARCH") {
-        x = action.payload;
-        console.log(x)
-        movies = searchMovie.filter((movie) => {
-            return (movie.Year === 2019);
-        })
-        console.log(movies)
-    }
-    return movies;
 
+const searchReducer = (state = [], action) => {
+    if (action.type === "SEARCH") {
+        state = moviesList.filter((movie) => {
+            return (movie.Year.toString() === action.payload || movie.Title.toLowerCase() === action.payload.toLowerCase());
+        })
+    }
+    return state;
 }
 
 export default searchReducer;

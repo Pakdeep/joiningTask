@@ -3,11 +3,12 @@ import "./App.css"
 import Search from './components/Search/Search';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Result from './components/Result/Result';
+import Heading from './components/Heading';
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <h1>Movies</h1>
+        <Heading/>
         <Search />
         <Routes>
           <Route exact path="/" element={<Home />} />
